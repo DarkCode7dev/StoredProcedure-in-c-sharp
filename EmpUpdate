@@ -1,0 +1,7 @@
+CREATE PROCEDURE EmpUpdate
+	@param1 int = 0,
+	@param2 varchar(30)='',
+	@param3 varchar(30)=''
+AS
+ Update  Employee set  EmpName=@param2, EmpAddress=@param3 where EmpId=@param1;
+RETURN 0
