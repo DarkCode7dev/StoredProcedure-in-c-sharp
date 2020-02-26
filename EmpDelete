@@ -1,0 +1,5 @@
+CREATE PROCEDURE EmpDelete
+	@param1 int = 0
+AS
+  Delete from Employee where EmpId=@param1;
+RETURN 0
